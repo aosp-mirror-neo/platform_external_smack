@@ -53,6 +53,9 @@ java_library {
     ],
     sdk_version: "current",
     visibility: ["//vendor:__subpackages__"],
+    errorprone: {
+        javacflags: ["-Xep:ReturnValueIgnored:OFF"],
+    },
 }
 
 java_library {
